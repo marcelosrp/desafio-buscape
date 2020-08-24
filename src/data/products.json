@@ -1,0 +1,66 @@
+{
+  "items": [
+    {
+      "product": {
+        "id": 2321312,
+        "name": "Smartphone Apple iPhone 7 128GB",
+        "images": [
+          "https://i.zst.com.br/images/smartphone-apple-iphone-7-7-128gb-128gb-12-0-mp-apple-a10-fusion-ios-10-photo193194632-45-37-c.jpg",
+          "https://i.zst.com.br/images/smartphone-apple-iphone-7-7-128gb-128gb-12-0-mp-apple-a10-fusion-ios-10-photo193194634-45-1-c.jpg",
+          "https://i.zst.com.br/images/smartphone-apple-iphone-7-7-128gb-128gb-12-0-mp-apple-a10-fusion-ios-10-photo193194635-45-26-c.jpg"
+        ],
+        "price": {
+          "value": 3509.1,
+          "installments": 10,
+          "installmentValue": 389.9
+        }
+      }
+    },
+    {
+      "product": {
+        "id": 9971,
+        "name": "Smart TV Samsung Série 4 UN32J4300AG 32 polegadas LED Plana",
+        "images": [
+          "https://i.zst.com.br/images/smart-tv-tv-led-32-samsung-serie-4-32j4290-2-hdmi-photo670040152-45-2c-2c.jpg",
+          "https://i.zst.com.br/images/smart-tv-tv-led-32-samsung-serie-4-32j4290-2-hdmi-photo670040193-45-5-2c.jpg",
+          "https://i.zst.com.br/images/smart-tv-tv-led-32-samsung-serie-4-32j4290-2-hdmi-photo670040197-45-19-2c.jpg"
+        ],
+        "price": {
+          "value": 1139.9,
+          "installments": 10,
+          "installmentValue": 134.11
+        }
+      }
+    },
+    {
+      "product": {
+        "id": 6717131,
+        "name": "Câmera Digital Canon EOS Rebel T5i 18.0 Megapixels",
+        "images": [
+          "https://i.zst.com.br/images/camera-digital-dslr-profissional-canon-eos-18-mp-full-hd-rebel-t100-photo695387910-45-36-12.jpg",
+          "https://i.zst.com.br/images/camera-digital-dslr-profissional-canon-eos-18-mp-full-hd-rebel-t100-photo695387937-45-33-12.jpg",
+          "https://i.zst.com.br/images/camera-digital-dslr-profissional-canon-eos-18-mp-full-hd-rebel-t100-photo695387940-45-d-12.jpg"
+        ],
+        "price": {
+          "value": 1999.2,
+          "installments": 10,
+          "installmentValue": 235.2
+        }
+      }
+    },
+    {
+      "product": {
+        "id": 6717132,
+        "name": "Notebook Lenovo IdeaPad S145 81XM0002BR Intel Core i3 8130U 15,6 4GB HD 1 TB 8ª Geração",
+        "images": [
+          "https://i.zst.com.br/images/notebook-lenovo-ideapad-s145-intel-core-i3-8130u-8-geracao-4gb-de-ram-hd-1-tb-15-6-windows-10-81xm0002br-photo1149215342-45-11-36.jpg"
+        ],
+        "price": {
+          "value": 2899.0,
+          "installments": 10,
+          "installmentValue": 289.9
+        }
+      }
+    }
+  ]
+}

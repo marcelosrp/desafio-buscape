@@ -1,0 +1,75 @@
+.productsWrap {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.productsItem {
+  align-items: center;
+  background-color: var(--main-white);
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.02);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 15px 0;
+  padding: 15px 5px;
+  width: 100%;
+}
+
+.productTitle {
+  border-bottom: 1px solid var(--main-gray);
+  color: var(--main-black);
+  font-size: 19px;
+  font-weight: var(--font-medium);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.productThumb {
+  cursor: pointer;
+  margin-right: 30px;
+  width: 200px;
+}
+
+.productInstallments {
+  color: var(--main-green);
+  font-size: 18px;
+  font-weight: var(--font-medium);
+  margin: 5px 0;
+}
+
+.productInstallments span {
+  font-size: 24px;
+  font-weight: var(--font-medium);
+}
+
+.productValue {
+  color: var(--main-gray2);
+  font-weight: var(--font-medium);
+}
+
+.productValue span {
+  color: var(--main-green);
+  font-weight: var(--font-medium);
+}
+
+.buttonAddToCart {
+  background-color: var(--main-green);
+  border: none;
+  border-radius: 4px;
+  color: var(--main-white);
+  cursor: pointer;
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  font-weight: var(--font-regular);
+  margin-top: 10px;
+  padding: 10px 15px;
+}
+
+.buttonAddToCart:disabled {
+  background-color: var(--main-gray2);
+  cursor: auto;
+  opacity: 0.5;
+}

@@ -1,0 +1,34 @@
+.header {
+  align-items: center;
+  background-color: var(--main-yellow);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu {
+  position: relative;
+}
+
+.boxQtdItens {
+  align-items: center;
+  background-color: var(--main-red);
+  bottom: 05px;
+  border-radius: 50%;
+  color: var(--main-white);
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  left: 5px;
+  position: absolute;
+  width: 25px;
+}
