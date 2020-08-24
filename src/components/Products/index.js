@@ -16,7 +16,7 @@ const Products = () => {
           <ProductItem
             key={id}
             id={id}
-            mainImg={images[0]}
+            images={images}
             name={name}
             value={price.value}
             installments={price.installments}

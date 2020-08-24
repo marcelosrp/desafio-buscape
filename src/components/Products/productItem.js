@@ -1,10 +1,18 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import SwiperCore, { Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/swiper.scss';
+import 'swiper/components/pagination/pagination.scss';
+
 import styles from './products.module.css';
+
+SwiperCore.use([Pagination]);
 
 const ProductItem = ({
   id,
-  mainImg,
+  images,
   name,
   value,
   installments,
@@ -14,8 +22,19 @@ const ProductItem = ({
 }) => {
   return (
     <div className={styles.productsItem} data-id={id}>
-      <div>
-        <img src={mainImg} alt={name} className={styles.productThumb} />
+      <div className={styles.productItemThumb}>
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+        >
+          {images.map((item) => (
+            <SwiperSlide key={item}>
+              <img src={item} alt={name} className={styles.productThumb} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <div className={styles.productItemText}>
         <h1 className={styles.productTitle}>{name}</h1>
@@ -33,7 +52,7 @@ const ProductItem = ({
           onClick={() =>
             addProductToCart(
               id,
-              mainImg,
+              images[0],
               name,
               installments,
               installmentValue,
@@ -49,7 +68,7 @@ const ProductItem = ({
 };
 
 ProductItem.propTypes = {
-  mainImg: PropTypes.string.isRequired,
+  images: PropTypes.array.isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.number.isRequired,
   installments: PropTypes.number.isRequired,

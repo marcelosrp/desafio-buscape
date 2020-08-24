@@ -20,6 +20,11 @@
   width: 100%;
 }
 
+.productItemThumb {
+  text-align: center;
+  width: 300px;
+}
+
 .productTitle {
   border-bottom: 1px solid var(--main-gray);
   color: var(--main-black);
@@ -27,11 +32,6 @@
   font-weight: var(--font-medium);
   margin: 20px 0;
   padding-bottom: 10px;
-}
-
-.productThumb {
-  cursor: pointer;
-  width: 150px;
 }
 
 .productInstallments {

@@ -39,3 +39,11 @@ body {
   padding: 80px 10px 10px 10px;
   width: 1180px;
 }
+
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--main-yellow) !important;
+}
