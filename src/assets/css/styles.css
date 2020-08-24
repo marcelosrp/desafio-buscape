@@ -20,17 +20,22 @@
   --font-light: 300;
   --font-regular: 400;
   --font-medium: 500;
+
+  --xs-size: 660px;
+  --lg-size: 1180px;
 }
 
 body {
+  background-color: var(--main-gray);
   font-family: var(--main-font-family);
   font-size: 16px;
   font-weight: var(--font-regular);
 }
 
 .main-content {
-  background-color: var(--main-gray);
+  margin: 0 auto;
   min-height: 100vh;
+  max-width: 100%;
   padding: 80px 10px 10px 10px;
-  width: 100%;
+  width: 1180px;
 }

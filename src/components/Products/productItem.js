@@ -17,7 +17,7 @@ const ProductItem = ({
       <div>
         <img src={mainImg} alt={name} className={styles.productThumb} />
       </div>
-      <div>
+      <div className={styles.productItemText}>
         <h1 className={styles.productTitle}>{name}</h1>
         <p className={styles.productInstallments}>
           {installments}x

@@ -14,25 +14,27 @@ const ItemMenuCollapse = ({
 }) => {
   return (
     <div className={styles.menuCollapseItem}>
-      <button
-        type="button"
-        className={styles.buttonRemoveProductFromCart}
-        onClick={(e) => removeProductFromCart(id, value)}
-      >
-        <CloseIcon />
-      </button>
-      <div className={styles.itemThumb}>
-        <img src={mainImg} alt={name} className={styles.productThumb} />
-      </div>
-      <div>
-        <h1 className={styles.productTitle}>{name}</h1>
-        <p className={styles.productPriceInfos}>
-          {installments}x
-          <span> R$ {parseFloat(installmentValue).toFixed(2)}</span>
-        </p>
-        <p className={styles.productPriceInfos}>
-          ou R$ <span>${parseFloat(value).toFixed(2)}</span> à vista
-        </p>
+      <div className={styles.menuCollapseWrap}>
+        <button
+          type="button"
+          className={styles.buttonRemoveProductFromCart}
+          onClick={(e) => removeProductFromCart(id, value)}
+        >
+          <CloseIcon />
+        </button>
+        <div className={styles.itemThumb}>
+          <img src={mainImg} alt={name} className={styles.productThumb} />
+        </div>
+        <div>
+          <h1 className={styles.productTitle}>{name}</h1>
+          <p className={styles.productPriceInfos}>
+            {installments}x
+            <span> R$ {parseFloat(installmentValue).toFixed(2)}</span>
+          </p>
+          <p className={styles.productPriceInfos}>
+            ou R$ <span>${parseFloat(value).toFixed(2)}</span> à vista
+          </p>
+        </div>
       </div>
     </div>
   );

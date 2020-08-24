@@ -74,3 +74,19 @@
   cursor: auto;
   opacity: 0.5;
 }
+
+@media (min-width: 1180px) {
+  .productsItem {
+    flex-flow: row;
+    padding: 30px;
+    text-align: right;
+  }
+
+  .productThumb {
+    width: auto;
+  }
+
+  .productItemText {
+    width: 50%;
+  }
+}
