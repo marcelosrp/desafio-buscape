@@ -7,6 +7,7 @@ export const GlobalStorage = ({ children }) => {
   const [subTotal, setSubTotal] = useState([]);
   const [sumSubTotal, setsumSubTotal] = useState(null);
   const [selectedItems, setSelectedItems] = useState([]);
+  const [toast, setToast] = useState({});
 
   const addProductToCart = (
     id,
@@ -28,11 +29,24 @@ export const GlobalStorage = ({ children }) => {
     setProductsToCart([...productsToCart, obj]);
     setSubTotal([...subTotal, value]);
     selectingProductItem(id);
+
+    setToast({
+      open: true,
+      message: 'Produto adicionado ao carrinho com sucesso',
+      severity: 'success',
+    });
   };
 
   const removeProductFromCart = (id, value) => {
     setProductsToCart(productsToCart.filter((item) => item.id !== id));
     setSubTotal(subTotal.filter((item) => item !== value));
+    setSelectedItems(selectedItems.filter((item) => item !== id));
+
+    setToast({
+      open: true,
+      message: 'Produto removido do carrinho com sucesso',
+      severity: 'warning',
+    });
   };
 
   const selectingProductItem = (id) => {
@@ -44,6 +58,14 @@ export const GlobalStorage = ({ children }) => {
     } else {
       setSelectedItems([...selectedItems, id]);
     }
+  };
+
+  const handleCloseToast = (e, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setToast({ open: false });
   };
 
   useEffect(() => {
@@ -59,6 +81,8 @@ export const GlobalStorage = ({ children }) => {
         removeProductFromCart,
         sumSubTotal,
         selectedItems,
+        toast,
+        handleCloseToast,
       }}
     >
       {children}

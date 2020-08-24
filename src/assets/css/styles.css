@@ -31,6 +31,6 @@ body {
 .main-content {
   background-color: var(--main-gray);
   min-height: 100vh;
-  padding: 100px 10px 10px 10px;
+  padding: 80px 10px 10px 10px;
   width: 100%;
 }

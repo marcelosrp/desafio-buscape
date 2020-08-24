@@ -18,7 +18,7 @@ const MenuCollapse = () => {
   return (
     <section className={styles.menuCollapse}>
       {productsToCart.length === 0 ? (
-        <h1>Seu carrinho está vazio</h1>
+        <h1 className={styles.tituloVazio}>Seu carrinho está vazio</h1>
       ) : (
         <>
           {productsToCart.map((product) => {
